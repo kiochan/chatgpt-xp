@@ -55,14 +55,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve static files including showdown.min.js
-app.use("/lib", express.static(DOWNLOAD_DIR), {
-  // Set correct header
-  setHeaders: (res, path) => {
-    if (path.endsWith(".js")) {
-      res.setHeader("Content-Type", "application/javascript");
-    }
-  },
-});
+app.use(
+  "/lib",
+  express.static(DOWNLOAD_DIR, {
+    // Set correct header
+    setHeaders: (res, path) => {
+      if (path.endsWith(".js")) {
+        res.setHeader("Content-Type", "application/javascript");
+      }
+    },
+  })
+);
 
 const sessions = new Map();
 
