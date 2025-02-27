@@ -1,0 +1,16 @@
+{
+  "name": "chatgpt-xp",
+  "version": "0.0.1",
+  "description": "ChatGPT IE6 Compatible Chat Application",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kiochan/chatgpt-xp.git"
+  },
+  "author": "Kiochan <kio@kiochan.one>",
+  "license": "MIT",
+  "dependencies": {}
+}
