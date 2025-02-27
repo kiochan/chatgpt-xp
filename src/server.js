@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
-const http = require("http");
+const https = require("https");
 
 dotenv.config();
 
@@ -34,7 +34,7 @@ function downloadFile(filename, url) {
   if (fs.existsSync(filePath)) return;
 
   const file = fs.createWriteStream(filePath);
-  http
+  https
     .get(url, (response) => {
       response.pipe(file);
       file.on("finish", () =>
