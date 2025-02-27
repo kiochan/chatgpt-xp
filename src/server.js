@@ -61,7 +61,7 @@ app.use(
     // Set correct header
     setHeaders: (res, path) => {
       if (path.endsWith(".js")) {
-        res.setHeader("Content-Type", "application/javascript");
+        res.setHeader("Content-Type", "text/javascript");
       }
     },
   })
