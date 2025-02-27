@@ -22,7 +22,7 @@ const TOKEN_LENGTH = 16;
 
 const FILES_TO_DOWNLOAD = {
   "showdown.min.js":
-    "http://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js",
+    "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.7.6/showdown.min.js",
 };
 
 if (!fs.existsSync(DOWNLOAD_DIR)) {
