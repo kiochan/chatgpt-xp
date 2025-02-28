@@ -22,6 +22,8 @@ const TOKEN_LENGTH = 16;
 
 const FILES_TO_DOWNLOAD = {
   "showdown.min.js":
+    // I use 1.0.2 here, since ver. 1.1.0 will
+    // start cause errors in Internet Explorer 6.
     "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.0.2/showdown.min.js",
 };
 
